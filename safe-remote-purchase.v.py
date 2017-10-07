@@ -9,7 +9,7 @@ state: num # 0 = created, 1 = locked, 2 = finished/inactive
 def __init__():
     #Assert that the value is a multiple of 2
     assert (msg.value % 2) == 0
-    self.value = msg.value
+    self.value = msg.value / 2
     self.seller = msg.sender
     self.state = 0 #Created
 def abort():
